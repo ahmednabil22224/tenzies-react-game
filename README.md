@@ -74,8 +74,9 @@ src/
  │    ├── NumBox.js
  ├── context/
  │    └── TimeContext.js
- ├── assets/
- │    ├── images/
+ ├── images/
+ │    ├── tenzies-react-game.png
+ │    └── lighthouse-report.png
  ├── index.js
  └── App.css
 ```
