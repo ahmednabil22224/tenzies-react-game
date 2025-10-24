@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# 🎲 Tenzies Game — React Edition
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fun and interactive dice game built with **React.js**.  
+Roll the dice, match all numbers, and race against time to achieve the best score!  
+Includes animations, a live timer, win tracking, and persistent records saved locally.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+🚀 Live Demo
 
-### `npm start`
+👉 https://github.com/ahmednabil22224/tenzies-react-game.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🌟 Features
 
-### `npm test`
+- 🎯 **Core Gameplay** — Roll until all dice show the same value.
+- 🧮 **Step Counter** — Tracks how many rolls you took to win.
+- ⏱️ **Live Timer** — Starts manually, pauses and resets automatically on win.
+- 🏆 **Leaderboard** — Saves your top 3 fastest times locally using `localStorage`.
+- 🎨 **Dynamic UI** — Color-coded dice, responsive layout, and smooth transitions.
+- 🎉 **Celebration Animation** — Moving background and confetti appear when you win.
+- 🔄 **Reset & New Game** — Quick restart without refreshing the page.
+- 🧠 **Smart State Management** — Managed using React Context and Hooks.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🧩 Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Area                   | Technologies                                              |
+| ---------------------- | --------------------------------------------------------- |
+| **Frontend Framework** | React.js (Hooks + Context API)                            |
+| **Styling**            | CSS3 (Flexbox, Grid, Variables, Animations)               |
+| **Language**           | JavaScript (ES6+)                                         |
+| **State Management**   | React Context + Hooks (`useState`, `useEffect`, `useRef`) |
+| **Persistence**        | Browser LocalStorage                                      |
+| **UX Enhancements**    | Confetti animation, background effects                    |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Getting Started
 
-### `npm run eject`
+### 1️⃣ Clone this repository
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+git clone https://github.com/ahmednabil22224/tenzies-react-game.git
+cd tenzies-react-game
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2️⃣ Install dependencies
+npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+3️⃣ Run the app locally
+npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Then open http://localhost:3000 in your browser 🎮
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+⚙️ Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+src/
+ ├── App.js
+ ├── components/
+ │    ├── Header.js
+ │    ├── Main.js
+ │    ├── Target.js
+ │    ├── FullNums.js
+ │    ├── NumBox.js
+ ├── context/
+ │    └── TimeContext.js
+ ├── assets/
+ │    ├── images/
+ ├── index.js
+ └── App.css
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+🧠 Key Learnings
 
-### Making a Progressive Web App
+. How to structure a React app using Context API for global state.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+. Handling game logic and UI updates with React Hooks.
 
-### Advanced Configuration
+. Managing timers and intervals efficiently using useRef.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+. Using localStorage for client-side persistence.
 
-### Deployment
+. Creating animations and effects for better UX.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 🌟 Lighthouse Report
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| Metric            | Score |
+| ----------------- | ----- |
+| ⚡ Performance    | 100%  |
+| ♿ Accessibility  | 100%  |
+| 🛡️ Best Practices | 100%  |
+| 🔍 SEO            | 100%  |
+
+images/lighthouse-report.png
+
+## ⚡ Lighthouse Report
+
+![Lighthouse Report](./src/images/lighthouse-report.png)
+
+## 📸 Preview
+
+![Preview](./src/images/tenzies-react-game.png)
