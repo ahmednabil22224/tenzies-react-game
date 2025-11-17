@@ -1,4 +1,4 @@
-# 🎲 Tenzies Game — React Edition
+# 🎲 Tenzies Game — React Edition 
 
 A fun and interactive dice game built with **React.js**.  
 Roll the dice, match all numbers, and race against time to achieve the best score!  
